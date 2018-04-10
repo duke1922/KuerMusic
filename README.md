@@ -27,51 +27,51 @@ npm run build
 
 ```
 
-### 使用依赖
-<pre>
-   animate.css
-   vue-router
-   vue-resource
-   webpack
-   vue-awesome-swiper...
-</pre>
 ### 目录结构
 <pre>
 
 ├── README.md           
 ├── config             // 项目不同环境的配置
-├── index.html         // 项目入口文件
 ├── dist               // 项目build目录
 ├── package.json       // 项目配置文件
 ├── src                // 生产目录
-│   ├── assets         // css js 和图片资源
-│   │	├── css
-│   │	├── iconfont
-│   │	├── img
-│   │	└── js
+│   ├── assets         // 图片资源
+│   │	├── icon
+│   │	└── img
 │   ├── components     // 各种组件
-│   │	├── loading
-│   │	├── carousel.vue
-│   │	├── header.vue
-│   │	├── home.vue
-│   │	├── musicList.vue
-│   │	├── navBar.vue
-│   │	├── playInfo.vue
-│   │	├── playBar.vue
-│   │	├── raking.vue
-│   │	├── search.vue
-│   │	└── toplist.vue
-│   ├── store          // vuex状态管理器
-│   │	├── action.js
-│   │	├── getters.js
-│   │	├── index.js
-│   │	├── mutations.js
-│   │	├── state.js
-│   │	└── types.js
-│   ├── json           // 推荐页面数据
-│   │	└── recommend.json
-│   ├── App.vue        
-│   └── main.js        // Webpack 预编译入口
+│   │	├── ActionSheet.vue
+│   │	├── Album.vue
+│   │	├── Cd.vue
+│   │	├── Hello.vue
+│   │	├── Lyric.vue
+│   │	├── Play.vue
+│   │	├── PlayingList.vue
+│   │	├── Rank.vue
+│   │	├── RankPage.vue
+│   │	├── Recomand.vue
+│   │	├── Search.vue
+│   │	└── Singer.vue
+│   ├── config          // 设置
+│   │	├── api.js
+│   │	└── def.js
+│   ├── lib             // 推荐页面数据
+│   │	├── components    // 组件数据
+│   │	├── libs          // 路由配置
+│   │	├── mixins        // 混入配置
+│   │	└── styles        // 应用样式
+│   ├── store           // 状态管理
+│   │	├── ApiService.js        // 组件数据
+│   │	├── index.js             // 路由配置
+│   │	├── NotifyService.js     // 混入配置
+│   │	└── PlayService          // 应用样式
+│   ├── style           // 组件基本样式
+│   │	├── weui_actionsheet.less     
+│   │	└── weui_mask.less           
+│   ├── utils      
+│   │	└── base64.js           // 应用样式
+│   ├── App.vue           // 项目入口文件
+│   ├── router.js        // 路由配置接口
+│   └── main.js        // Webpack 预编译入口
 </pre>
 
 
@@ -79,7 +79,8 @@ npm run build
 
 - [x]   音乐播放
 - [x]   自动播放下一曲
-- [x]   音乐列表（增删）
+- [x]   提前添加到下一首播放
+- [x]   音乐列表（增删）
 - [x]   下一曲
 - [x]   排行榜
 - [x]   排行榜详情页
@@ -88,7 +89,6 @@ npm run build
 - [x]   播放详情页
 - [x]   滚动歌词
 - [x]   展示音乐进度
-- [x]   音乐进度的拖拽
 
 ---
 
